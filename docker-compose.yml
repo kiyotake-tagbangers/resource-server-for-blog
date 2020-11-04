@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  keycloak:
+    image: jboss/keycloak:11.0.2
+    ports:
+      - 8000:8080
+    environment:
+      - KEYCLOAK_USER=keycloak
+      - KEYCLOAK_PASSWORD=keycloak
+      - KEYCLOAK_IMPORT=/tmp/sample-realm.json
+    volumes:
+      - .keycloak:/tmp
