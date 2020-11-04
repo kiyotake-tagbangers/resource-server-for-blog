@@ -1,5 +1,9 @@
 # resource server for blog
 
+## Sequence diagram
+
+![Sequence diagram](./images/AuthorizationCodeGrantForBlog.png)
+
 ## Run locally
 
 - run keycloak
